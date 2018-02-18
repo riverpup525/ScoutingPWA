@@ -1,0 +1,41 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #001375;
+  color: #FFF;
+  font-family: Roboto, Arial, Helvetica, Sans-Serif;
+
+}
+
+.title{
+
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-family: Roboto, Arial, Helvetica, Sans-Serif;
+  font-weight: 200;
+  font-size: 20px;
+
+
+}
+
+.title > h1 {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 3.25px;
+
+}
+
+.Auto{
+  margin-top: 20%;
+}

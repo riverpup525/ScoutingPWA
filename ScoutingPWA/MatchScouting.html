@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MatchScouting</title>
+    <link rel="stylesheet" href="Styles/matchScouting.css">
+  </head>
+
+  <body>
+
+    <div class="title">
+      <h1> MATCH </h1>
+      <h1> SCOUTING </h1>
+    </div>
+
+
+
+    <div class="ScoutingWhole">
+      <form name="ScoutingInfo" action="index.html" method="POST">
+        <div class="matchInfo">
+          <div class="InfoTitle">
+            <h2> Match Info </h2>
+          </div>
+          <div class="nickName">
+            <label for="nickName">Nick Name:</label>
+            <textarea name="nickName" id="nickName" placeholder="Anonymous Dolphin" rows="1"></textarea>
+          </div>
+          <div class="Name">
+            <label for="Name">Name:</label>
+            <textarea name="Name" id="Name" value=username rows="1"></textarea>
+          </div>
+          <div class="matchNum">
+            <label for="matchNum">Match Number:</label>
+            <select required name="matchNum" id='matchNum'>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+              <option value="33">33</option>
+              <option value="34">34</option>
+              <option value="35">35</option>
+              <option value="36">36</option>
+              <option value="37">37</option>
+              <option value="38">38</option>
+              <option value="39">39</option>
+              <option value="40">40</option>
+              <option value="41">41</option>
+              <option value="42">42</option>
+              <option value="43">43</option>
+              <option value="44">44</option>
+              <option value="45">45</option>
+              <option value="46">46</option>
+              <option value="47">47</option>
+              <option value="48">48</option>
+              <option value="49">49</option>
+              <option value="50">50</option>
+              <option value="51">51</option>
+              <option value="52">52</option>
+              <option value="53">53</option>
+              <option value="54">54</option>
+              <option value="55">55</option>
+              <option value="56">56</option>
+              <option value="57">57</option>
+              <option value="58">58</option>
+              <option value="59">59</option>
+              <option value="60">60</option>
+              <option value="61">61</option>
+              <option value="62">62</option>
+              <option value="63">63</option>
+              <option value="64">64</option>
+              <option value="65">65</option>
+              <option value="66">66</option>
+              <option value="67">67</option>
+              <option value="68">68</option>
+              <option value="69">69</option>
+              <option value="70">70</option>
+              <option value="71">71</option>
+              <option value="72">72</option>
+              <option value="73">73</option>
+              <option value="74">74</option>
+              <option value="75">75</option>
+              <option value="76">76</option>
+              <option value="77">77</option>
+              <option value="78">78</option>
+              <option value="79">79</option>
+              <option value="80">80</option>
+            </select>
+          </div>
+          <div class="pickTeam">
+            <label for="pickTeam">Team Number:</label>
+            <select required name="pickTeam" id='pick_Team'>
+              <option value="176">176</option>
+              <option value="177">177</option>
+              <option value="181">181</option>
+              <option value="228">228</option>
+              <option value="230">230</option>
+              <option value="236">236</option>
+              <option value="237">237</option>
+              <option value="501">501</option>
+              <option value="558">558</option>
+              <option value="571">571</option>
+              <option value="999">999</option>
+              <option value="1099">1099</option>
+              <option value="1676">1676</option>
+              <option value="1699">1699</option>
+              <option value="2067">2067</option>
+              <option value="2170">2170</option>
+              <option value="3104">3104</option>
+              <option value="3182">3182</option>
+              <option value="3314">3314</option>
+              <option value="3461">3461</option>
+              <option value="3464">3464</option>
+              <option value="3525">2525</option>
+              <option value="4055">4055</option>
+              <option value="4097">4097</option>
+              <option value="4557">4557</option>
+              <option value="4572">4572</option>
+              <option value="5129">5129</option>
+              <option value="5142">5142</option>
+              <option value="5856">5856</option>
+              <option value="6723">6723</option>
+              <option value="7266">7266</option>
+              <option value="7269">7269</option>
+            </select>
+          </div>
+          <div class="pickAlliance" id="pickAlliance">
+            <label for="pickTeam">Alliance Color:</label>
+            <select class="required" name="pickAlliance" id='pick_Alliance'>
+              <option value="Blue">Blue</option>
+              <option value="Red">Red</option>
+            </select>
+
+          </div>
+        </div>
+
+        <div class="Auto">
+          <div class="AutoTitle">
+            <h2> Auto </h2>
+          </div>
+          <h4>Where do they start?</h4>
+          <div class="startPos" id='start_Pos'>
+            <input type="radio" name="startPos" id='startPos_left' value="Left">
+            <label>left</label>
+            <input type="radio" name="startPos" id='startPos_center' value="Center">
+            <labe>center</label>
+            <input type="radio" name="startPos" id='startPos_right' value="Right">
+            <label>right</label>
+          </div>
+          <h4>Do they move?</h4>
+          <div class="doesMove" id='does_Move'>
+            <input type="radio" name="doesMove" id='doesMove_no' value="No">
+            <label>no</label>
+            <input type="radio" name="doesMove" id='doesMove_yes' value="Yes">
+            <labe>yes</label>
+          </div>
+          <h4>How many cubes in the Switch?</h4>
+          <div class="switchCountA">
+              <div>
+                <input name = "switchCountA" id="switchCountA" type="number" >
+              </div>
+          </div>
+          <h4>How fast do they get to the switch?</h4>
+          <div class="howFastSwitchA" id="how_FastSwitchA">
+            <input type="radio" name="howFastSwitchA" id='howFastSwitchA_slow' value= "Slow">
+            <label>slow</label>
+            <input type="radio" name="howFastSwitchA" id='howFastSwitchA_medium' value = "Medium">
+            <label>medium</label>
+            <input type="radio" name="howFastSwitchA" id='howFastSwitchA_fast' value = "Fast">
+            <label>fast</label>
+          </div>
+          <h4>How many cubes in the scale? </h4>
+          <div class="scaleCountA">
+            <div>
+              <input name = "scaleCountA" id="scaleCountA" type="number">
+            </div>
+          </div>
+          <h4>How fast do they get to the scale? </h4>
+          <div class="howFastScaleA" id='how_FastScaleA'>
+            <input type="radio" name="howFastScaleA" id='howFastScaleA_slow' value="Slow">
+            <label>slow</label>
+            <input type="radio" name="howFastScaleA" id='howFastScaleA_medium' value="Medium">
+            <label>medium</label>
+            <input type="radio" name="howFastScaleA" id='howFastScaleA_fast' Value="Fast">
+            <label>fast</label>
+          </div>
+          <h4>Did they get any Fouls in auto?</h4>
+          <div class="FoulsA" id='does_FoulA'>
+            <input type="radio" name="doesFoulA" id='doesFoulA_no' value="No">
+            <label>no</label>
+            <input type="radio" name="doesFoulA" id='doesFoulA_yes' value="Yes">
+            <labe>yes</label>
+          </div>
+        </div>
+
+        <div class="TeleOP">
+          <div class="TeleTitle">
+            <h2> TeleOP </h2>
+          </div>
+          <h4>Can they score in the high scale position?</h4>
+          <div class="canHighGoal" id="can_HighGoal">
+            <input type="radio" name="canHighGoal" id='canHighGoal_no' value="No">
+            <label>no</label>
+            <input type="radio" name="canHighGoal" id='canHighGoal_yes' value = "Yes">
+            <labe>yes</label>
+          </div>
+          <div class="placeMethod">
+            <input type="text" placeholder="Placement Style..." id="placeMethod" name="placeMethod">
+          </div>
+          <h4>Do they play any defense?</h4>
+          <div class="doesDefend" id='does_defend'>
+            <input type="radio" name="doesDefend" id='doesDefend_no' value="No">
+            <label>no</label>
+            <input type="radio" name="doesDefend" id='doesDefend_yes' value="Yes">
+            <labe>yes</label>
+          </div>
+            <h4>How many cubes did they place in the switch?</h4>
+          <div class="switchCountT">
+            <div>
+              <input id="switchCountT" type="number" name="switchCountT">
+            </div>
+          </div>
+          <h4>How many cubes did they place in the scale?</h4>
+          <div class="scaleCountT">
+            <div>
+              <input id="scaleCountT" type="number" name="scaleCountT">
+            </div>
+          </div>
+          <h4>How many cubes did they place in the exchange?</h4>
+          <div class="exchangeCountT">
+            <div>
+              <input id="exchangeCountT" type="number" name="exchangeCountT">
+            </div>
+          </div>
+        </div>
+
+        <div class="Endgame">
+          <div class="EndgameTitle">
+            <h2> Endgame </h2>
+          </div>
+          <h4>Can they park?</h4>
+          <div class="canPark" id='can_Park'>
+            <input type="radio" name="canPark" id='canPark_no' value="No">
+            <label>no</label>
+            <input type="radio" name="canPark" id='canPark_yes' value="Yes">
+            <labe>yes</label>
+          </div>
+          <h4>Can they climb?</h4>
+          <div class="doesClimb" id='does_Climb'>
+            <input type="radio" name="doesClimb" id='doesClimb_no' value="No">
+            <label>no</label>
+            <input type="radio" name="doesClimb" id='doesClimb_yes' value="Yes">
+            <labe>yes</label>
+          </div>
+          <h4>Can they climb well?</h4>
+          <div class="doesClimbWell" id="does_ClimbWell">
+            <input type="radio" name="doesClimbWell" id='doesClimbWell_Sketchy' value="Sketchy">
+            <label>Sketchy</label>
+            <input type="radio" name="doesClimbWell" id='doesClimbWell_Decent' value="Decent">
+            <labe>Decent</label>
+            <input type="radio" name="doesClimbWell" id='doesClimbWell_Strong' value="Strong">
+            <labe>Strong</label>
+          </div>
+          <h4>Can they support others? (ie: rungs)</h4>
+          <div class="canSupport" id="can_Support">
+            <input type="radio" name="canSupport" id='canSupport_no' value="No">
+            <label>no</label>
+            <input type="radio" name="canSupport" id='canSupport_yes' value="Yes">
+            <labe>yes</label>
+          </div>
+          <h4>Can they carry others? (ie:Ramps/Wings)</h4>
+          <div class="canCarry" id='can_Carry'>
+            <input type="radio" name="canCarry" id='canCarry_no' value="No">
+            <label>no</label>
+            <input type="radio" name="canCarry" id='canCarry_yes' value="Yes">
+            <labe>yes</label>
+          </div>
+          <h4>Did they get any Fouls in Teleop?</h4>
+          <div class="doesFoulT" id='does_FoulT'>
+            <input type="radio" name="doesFoulT" id='doesFoulT_no' value="No">
+            <label>no</label>
+            <input type="radio" name="doesFoulT" id='doesFoulT_yes' value="Yes">
+            <labe>yes</label>
+          </div>
+        </div>
+
+        <div class="Notes">
+          <div class="Notes">
+          <textarea name="Notes" id="Notes" rows="8" cols="40" placeholder="Notes..."></textarea>
+          </div>
+        </div>
+
+        <div class="Submit">
+          <button type="submit" id"_Submit">Send</button>
+        </div>
+        </form>
+  </div>
+
+    <script src="Scripts/matchScouting.js" charset="utf-8"></script>
+  </body>
+
+</html>
